@@ -108,7 +108,7 @@
                                     <a href="Asistencia-detalle.html" class="dropdown-item">Asistencia Detalle</a>
                                 </div>
                             </div>
-                            <a href="Contacto.html" class="nav-item nav-link">Contacto</a>
+                            <a href="Contacto.html" class="nav-item nav-link">Inscripcion</a>
                         </div>
                         <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block" href="">Unete Ahora</a>
                     </div>
@@ -140,7 +140,7 @@
         <div class="container py-5">
             <div class="text-center mb-5">
                 <h1 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Inscripcion</h1>
-                <h5>Contactanos para Consultas</h5>
+                <h5>Completa con tus datos</h5>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -168,19 +168,27 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control border-0 p-4" id="name" placeholder="Fecha de nacimiento" required="required" data-validation-required-message="Ingresa tu fecha de nacimiento" />
-                                <p class="help-block text-danger"></p>
-                            </div>
+                                <label for="start">Ingresa tu fecha de nacimiento</label>
+                                <input type="date" class="form-control border-0 p-4" id="subject" id="start" value="2018-07-22" min="1970-01-01" max="2010-12-31" required="required" data-validation-required-message="Ingresa tu fecha de nacimiento" />
+                               </div>
                             <div class="control-group">
-                                <input type="text" class="form-control border-0 p-4" id="name" placeholder="País" required="required" data-validation-required-message="Ingresa tu País" />
-                                <p class="help-block text-danger"></p>
-                            </div>
+                                <label for="Pais">Selecciona tu País:</label><br>
+                                <select name="name" id="" required="required">
+                                   <option value="Selecione">Selecione</option>
+                                   <option value="Selecione">Argentina</option>
+                                   <option value="Selecione">Brasil</option>
+                                   <option value="Selecione">Paraguay</option>
+                                   <option value="Selecione">Chile</option>
+                                   <option value="Selecione">Uruguay</option>
+                                   <option value="Selecione">Bolivia</option>      
+                                </select>
                             <div class="control-group">
                                 <textarea class="form-control border-0 py-3 px-4" rows="5" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Ingresa tu Mensaje"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="text-center">
                                 <button class="btn btn-primary py-3 px-5" type="submit" id="sendMessageButton">Enviar Mensaje</button>
+                                <button class="btn btn-primary py-3 px-5" type="reset" id="sendMessageButton">Limpiar Campos</button>
                             </div>
                         </form>
                     </div>

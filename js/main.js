@@ -44,3 +44,35 @@
     
 })(jQuery);
 
+$(document).on('change', '#select_num', function() {
+
+    var $mensajeUno = $(
+      '<h1>UNO</h1>'
+    );
+    var $mensajeDos = $(
+      '<h1>DOS</h1>'
+    );
+    var $mensajeTres = $(
+      '<h1>TRES</h1>'
+    );
+    var $mensajeCuatro = $(
+      '<h1>CUATRO</h1>'
+    );
+    
+    var seleccion = $(this).val();
+    $('#mensaje').html('');
+    switch (seleccion) {
+      case '1':
+        $('#mensaje').append($mensajeUno);
+        break;
+      case '2':
+        $('#mensaje').append($mensajeDos);
+        break;
+      case '3':
+        $('#mensaje').append($mensajeTres);
+        break;
+      case '4':
+        $('#mensaje').append($mensajeCuatro);
+        break;
+    }
+});
